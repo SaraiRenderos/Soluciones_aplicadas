@@ -1,0 +1,108 @@
+/*slider*/
+ html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+          border-top: 5px solid #258cc8;
+    }
+    .swiper-container {
+      margin-top: 5%;
+      width: 100%;
+      height: 60%;
+      background: white;
+      margin:0;
+    }
+    .swiper-slide {
+      font-size: 18px;
+      color:#fff;
+      background: rgba(33, 103, 120, .3);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px;
+    }
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width:100%;
+      height: 100%;
+      background-size: cover;
+     background-position: center;
+    }
+    .swiper-slide .title {
+      font-size: 41px;
+      font-weight: 300;
+    }
+    .swiper-slide .subtitle {
+      font-size: 21px;
+    }
+    .swiper-slide .text {
+      font-size: 14px;
+      max-width: 400px;
+      line-height: 1.3;
+    }
+
+/* slider */
+
+
+div.Header{
+	color: black
+
+	
+
+	
+
+}
+
+
+div.Header nav.Menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+}
+
+
+div.Header nav.Menu {
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+}
+
+
+div.Header nav.Menu img {
+      width: 15%;
+      height: 5%;
+      padding: 1%;
+}
+
+
+div.Header nav.Menu ol {
+      margin: 0;
+      font-size: 20px;
+      width: 20%;
+      height: 10%;
+      padding-top: 2%;
+}
+
+
+div.Header nav.Menu ol :hover {
+      color:#258cc8;
+      border-bottom: 2px solid #258cc8;
+}
+
+
+div.Header nav.Menu ol a {
+      cursor: pointer;
+      margin: 0;
+}
+
