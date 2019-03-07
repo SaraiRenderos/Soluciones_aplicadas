@@ -1,23 +1,26 @@
+
+
 /*slider*/
- html, body {
+  html, body {
+    font-family : system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;
       position: relative;
       height: 100%;
+      border-top:3px solid #258cc8;
     }
     body {
       background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+     
       font-size: 14px;
       color:#000;
       margin: 0;
+
       padding: 0;
-          border-top: 5px solid #258cc8;
     }
     .swiper-container {
-      margin-top: 5%;
+     
       width: 100%;
-      height: 60%;
+      height: 80vh;
       background: white;
-      margin:0;
     }
     .swiper-slide {
       font-size: 18px;
@@ -55,54 +58,128 @@
 div.Header{
 	color: black
 
-	
-
-	
-
 }
 
 
 div.Header nav.Menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: space-evenly;
-          -ms-flex-pack: space-evenly;
-              justify-content: space-evenly;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 
 div.Header nav.Menu {
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 
 div.Header nav.Menu img {
-      width: 15%;
-      height: 5%;
-      padding: 1%;
+    width: 15%;
+    height: 5%;
+    padding: 1%;
 }
 
 
 div.Header nav.Menu ol {
-      margin: 0;
-      font-size: 20px;
-      width: 20%;
-      height: 10%;
-      padding-top: 2%;
+    margin: 0;
+    font-size: 20px;
+    width: 20%;
+    height: 10%;
+    padding-top: 2%;
 }
 
 
 div.Header nav.Menu ol :hover {
-      color:#258cc8;
-      border-bottom: 2px solid #258cc8;
+    color:#258cc8;
+    border-bottom: 2px solid #258cc8;
 }
 
 
 div.Header nav.Menu ol a {
-      cursor: pointer;
-      margin: 0;
+    cursor: pointer;
+    margin: 0;
+}
+body div.main_section div.history {
+    text-align: center;
+    margin: 0 5%;
+}
+body div.main_section div.history h3 {
+    color: rgb(41, 79, 128);
+}
+body div.main_section div.val {
+    text-align: center;
+}
+body div.main_section div.val div.son {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+body div.main_section div.val div.son h4 {
+    padding-top: 3%;
+    color: rgb(41, 79, 128);
+}
+body div.main_section h3 {
+    text-align: center;
+    padding-top: 3%;
+}
+body div.main_section img {
+    width: 10px;
+    padding: 5px;
+}
+body div.main_section  .icon_mission {
+    border-radius: 100px;
+    width: 10%;
+    text-align: center;
+    background: rgba(20, 36, 51, .5);
+}
+body div.main_section .card_mission {
+    color: rgb(41, 79, 128);
+    margin: 2% 0;
+    padding: 1% 0;
+    display: block;
+    font-size: 15px;
+    background:rgba(204, 209, 214, .7);
+}
+body div.main_section .card_mission div.element2 {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+body div.main_section .card_mission div.element2 .icon_mission {
+    margin-left: 3%;
+}
+body div.main_section .card_mission div.element2 .text_mission {
+    margin: 0 10%;
 }
 
+ body div.servicies{
+     text-align: center
+     
+         }
+
+ body div.servicies div.servi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+ body div.servicies div.servi div.card {
+    border: 2px solid blue;
+    margin: 2% 0;
+}
+
+ body div.servicies div.servi div.card button {
+    border: none;
+} 

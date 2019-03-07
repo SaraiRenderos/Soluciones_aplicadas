@@ -1,34 +1,38 @@
+
+
 :root{
 --cero : 0;
 --varr : 20%;
 --colorprincipal-opaco: rgb(33, 103, 120, 0.3);
 --colormain :#258cc8;
+--grisoscuro:rgb(41, 79, 128);
 }
 /*slider*/
- html, body {
+  html, body {
+    font-family : system-ui ;
       position: relative;
       height: 100%;
+      border-top:3px solid var(--colormain);
     }
     body {
       background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+     
       font-size: 14px;
       color:#000;
       margin: 0;
+
       padding: 0;
-          border-top: 5px solid var(--colormain);
     }
     .swiper-container {
-      margin-top: 5%;
+     
       width: 100%;
-      height: 60%;
+      height: 80vh;
       background: white;
-      margin:var(--cero);
     }
     .swiper-slide {
       font-size: 18px;
       color:#fff;
-      background: var(--colorprincipal-opaco);
+      background: rgb(33, 103, 120, 0.3);
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding: 40px 60px;
@@ -94,9 +98,78 @@ div.Header{
 	
 	}
 
-	
+}
+body div.main_section{
 
-	
-
+   & div.history{
+text-align: center;
+margin: 0 5%;
+& h3{
+  color: var(--grisoscuro);
 }
 
+    }
+       & div.val{
+          text-align: center;
+          & div.son {
+            display: flex;
+              justify-content: space-around;
+          & h4{
+             padding-top: 3%;
+              
+              color: var(--grisoscuro);
+      }}
+    
+    } 
+  & h3{
+		    text-align: center;
+       padding-top: 3%;
+	} & img{
+    
+       width: 10px;
+    padding: 5px;
+  }
+  &  .icon_mission{
+          border-radius: 100px;
+          width: 10%;
+          text-align: center;
+          background: hwb(210,8%,80%, 0.5);
+  } & .card_mission{
+        color: rgb(41, 79, 128);
+        margin: 2% 0;
+        padding: 1% 0;
+        display: block;
+        font-size: 15px;
+        background:hwb(210,80%,16%, 0.7);
+          & div.element2{
+            text-align: center;
+          display: flex;
+          justify-content: space-around;
+          & .icon_mission{
+                margin-left: 3%;
+           }
+           & .text_mission{
+                margin: 0 10%;
+
+           }
+          }
+    }
+  
+}
+
+ body div.servicies{
+     text-align: center;
+   
+     & div.servi{
+      display: flex;
+      justify-content: space-around;
+      & div.card{
+            border: 2px solid blue;
+            margin: 2% 0;
+            & button{
+            border: none;
+            }
+      }
+     }
+     
+         } 
