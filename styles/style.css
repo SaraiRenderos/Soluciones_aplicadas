@@ -15,6 +15,12 @@
 --violeta : #7d0784;
 --amarillo : #ded123;
 }
+
+@custom-media --mediano-grande (max-width: 930px);
+
+.nav-active{
+  transform: translateX(0%);
+}
 /*slider*/
   html, body {
     font-family : system-ui ;
@@ -23,15 +29,12 @@
       border-top:3px solid var(--colormain);
 
     }
+
     body {
       background: #eee;
-
-
-
       font-size: 14px;
       color:#000;
       margin: 0;
-
       padding: 0;
     }
     .swiper-container {
@@ -47,6 +50,10 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding: 40px 60px;
+       @media (--mediano-grande) {
+            & h3{font-size: large;} 
+
+                 }
     }
     .parallax-bg {
       position: absolute;
@@ -73,43 +80,10 @@
 
 /* slider */
 
+/*.nav-active{
+      transform: translateX(0%);
+}*/
 
-div.Header{
-	color: black;
-	& nav.Menu{
-	display: flex;
-    justify-content: space-evenly;
-
-	} 
-	& nav.Menu{
-    align-items: flex-end;
-	& img{
-		width: 15%;
-	    height: 5%;
-	    padding: 1%;
-	}
-		& ol{
-	    margin: var(--cero);
-	    font-size: 20px;
-	    width: 20%;
-	    height: 10%;
-	    padding-top: 2%;
-	    	& :hover{
-	   		color:var(--colormain);
-	   		border-bottom: 2px solid var(--colormain);
-	   	} 
-	   & a{
-text-decoration: none;
-		cursor: pointer;
-		 
-		margin: var(--cero);
-    	}
-
-	}
-	
-	}
-
-}
 body div.main_section{
 
    & div.history{
@@ -152,10 +126,16 @@ margin: 0 5%;
           width: 10%;
           text-align: center;
           background: hwb(210,8%,80%, 0.5);
-          & img{
+         @media (--mediano-grande) {
+           display: none; 
+
+                 }& img{
           width: 50px;
-          }
-  } & .card_mission{
+
+          } }
+          
+          
+   & .card_mission{
         color: rgb(41, 79, 128);
         margin: 2% 0;
         padding: 1% 0;
@@ -185,6 +165,10 @@ margin: 0 5%;
      & div.servi{
       display: flex;
       justify-content: space-around;
+       @media (max-width: 640px) {
+                    display:block;
+                        text-align: -webkit-center;
+                }
       & div.card{
           
             margin: 2% 0;
@@ -194,7 +178,14 @@ margin: 0 5%;
                   & img{
                   width: 100%;
                  height: 50%;
-                  } } 
+                  } 
+                @media (--mediano-grande) {
+
+                  & p{
+                    display: none;
+                  }
+                }
+                } 
       & .card1{border: 5px solid var(--naranja);& button{background: var(--naranja);}}
       & .card2{border: 5px solid var(--verde);& button{background: var(--verde);}}
       & .card3{border: 5px solid var(--agua);& button{background: var(--agua);}}
@@ -219,3 +210,16 @@ border-bottom: 2px solid var(--colormain);
         
 
          }
+.navbar-light .navbar-nav .nav-link {
+    color: var(--colormain);
+    font-size: 18px;
+
+}
+body .navbar-light .nav-item :hover{
+    border-bottom: 2px solid var(--colormain);
+      transform: scale(1.1); @media (--mediano-grande) {
+           transform: none; 
+
+                 }
+
+}
