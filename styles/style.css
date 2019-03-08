@@ -5,7 +5,15 @@
 --varr : 20%;
 --colorprincipal-opaco: rgb(33, 103, 120, 0.3);
 --colormain :#258cc8;
---grisoscuro:rgb(41, 79, 128);
+--azuloscuro:rgb(41, 79, 128);
+--naranja:#ffa500;
+--verde : #1ec24a;
+--agua : #1ec28e;
+--vino : #a91343;
+--azul : #007bff;
+--Voscuro : #0e5051;
+--violeta : #7d0784;
+--amarillo : #ded123;
 }
 /*slider*/
   html, body {
@@ -13,10 +21,13 @@
       position: relative;
       height: 100%;
       border-top:3px solid var(--colormain);
+
     }
     body {
       background: #eee;
-     
+
+
+
       font-size: 14px;
       color:#000;
       margin: 0;
@@ -88,7 +99,7 @@ div.Header{
 	   		border-bottom: 2px solid var(--colormain);
 	   	} 
 	   & a{
-
+text-decoration: none;
 		cursor: pointer;
 		 
 		margin: var(--cero);
@@ -105,20 +116,27 @@ body div.main_section{
 text-align: center;
 margin: 0 5%;
 & h3{
-  color: var(--grisoscuro);
+  color: var(--azuloscuro);
 }
 
     }
        & div.val{
           text-align: center;
+          color: var(--azuloscuro);
           & div.son {
             display: flex;
               justify-content: space-around;
+             
           & h4{
              padding-top: 3%;
               
-              color: var(--grisoscuro);
+              color: black;
       }}
+ & img{
+              width: 70%;
+              margin:2% 0;
+              }
+    
     
     } 
   & h3{
@@ -134,6 +152,9 @@ margin: 0 5%;
           width: 10%;
           text-align: center;
           background: hwb(210,8%,80%, 0.5);
+          & img{
+          width: 50px;
+          }
   } & .card_mission{
         color: rgb(41, 79, 128);
         margin: 2% 0;
@@ -158,18 +179,43 @@ margin: 0 5%;
 }
 
  body div.servicies{
+  margin:3% 0;
      text-align: center;
-   
+   color:  var(--azuloscuro);
      & div.servi{
       display: flex;
       justify-content: space-around;
       & div.card{
-            border: 2px solid blue;
+          
             margin: 2% 0;
-            & button{
-            border: none;
-            }
-      }
+
+                  & button{
+                  border: none;}
+                  & img{
+                  width: 100%;
+                 height: 50%;
+                  } } 
+      & .card1{border: 5px solid var(--naranja);& button{background: var(--naranja);}}
+      & .card2{border: 5px solid var(--verde);& button{background: var(--verde);}}
+      & .card3{border: 5px solid var(--agua);& button{background: var(--agua);}}
+      & .card4{border: 5px solid var(--vino);& button{background: var(--vino);}}
+      & .card5{border: 5px solid var(--azul);& button{background: var(--azul);}}
+      & .card6{border: 5px solid var(--Voscuro);& button{background: var(--Voscuro);}}
+      & .card7{border: 5px solid var(--colormain);& button{background: var(--colormain);}}
+      & .card8{border: 5px solid var(--violeta);& button{background: var(--violeta);}}
+      & .card9{border: 5px solid var(--amarillo);& button{background: var(--amarillo);}}
+
      }
      
          } 
+         body div.contact{
+          padding:3%;
+          background: #272727;
+          color: white;
+        & h3.title_contact{
+text-align: inherit;
+border-bottom: 2px solid var(--colormain);
+        }
+        
+
+         }

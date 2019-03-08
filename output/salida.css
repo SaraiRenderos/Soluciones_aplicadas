@@ -6,10 +6,13 @@
       position: relative;
       height: 100%;
       border-top:3px solid #258cc8;
+
     }
     body {
       background: #eee;
-     
+
+
+
       font-size: 14px;
       color:#000;
       margin: 0;
@@ -68,6 +71,7 @@ div.Header nav.Menu {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+
 }
 
 
@@ -75,6 +79,7 @@ div.Header nav.Menu {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+
 }
 
 
@@ -82,6 +87,7 @@ div.Header nav.Menu img {
     width: 15%;
     height: 5%;
     padding: 1%;
+
 }
 
 
@@ -91,28 +97,36 @@ div.Header nav.Menu ol {
     width: 20%;
     height: 10%;
     padding-top: 2%;
+
 }
 
 
 div.Header nav.Menu ol :hover {
     color:#258cc8;
     border-bottom: 2px solid #258cc8;
+
 }
 
 
 div.Header nav.Menu ol a {
+    text-decoration: none;
     cursor: pointer;
     margin: 0;
+
 }
 body div.main_section div.history {
     text-align: center;
     margin: 0 5%;
+
 }
 body div.main_section div.history h3 {
     color: rgb(41, 79, 128);
+
 }
 body div.main_section div.val {
     text-align: center;
+    color: rgb(41, 79, 128);
+
 }
 body div.main_section div.val div.son {
     display: -webkit-box;
@@ -120,24 +134,38 @@ body div.main_section div.val div.son {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+
 }
 body div.main_section div.val div.son h4 {
     padding-top: 3%;
-    color: rgb(41, 79, 128);
+    color: black;
+
+}
+body div.main_section div.val img {
+    width: 70%;
+    margin:2% 0;
+
 }
 body div.main_section h3 {
     text-align: center;
     padding-top: 3%;
+
 }
 body div.main_section img {
     width: 10px;
     padding: 5px;
+
 }
 body div.main_section  .icon_mission {
     border-radius: 100px;
     width: 10%;
     text-align: center;
     background: rgba(20, 36, 51, .5);
+
+}
+body div.main_section  .icon_mission img {
+    width: 50px;
+
 }
 body div.main_section .card_mission {
     color: rgb(41, 79, 128);
@@ -146,6 +174,7 @@ body div.main_section .card_mission {
     display: block;
     font-size: 15px;
     background:rgba(204, 209, 214, .7);
+
 }
 body div.main_section .card_mission div.element2 {
     text-align: center;
@@ -154,16 +183,21 @@ body div.main_section .card_mission div.element2 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+
 }
 body div.main_section .card_mission div.element2 .icon_mission {
     margin-left: 3%;
+
 }
 body div.main_section .card_mission div.element2 .text_mission {
     margin: 0 10%;
+
 }
 
  body div.servicies{
-     text-align: center
+  margin:3% 0;
+     text-align: center;
+   color:  rgb(41, 79, 128)
      
          }
 
@@ -173,13 +207,123 @@ body div.main_section .card_mission div.element2 .text_mission {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+
 }
 
  body div.servicies div.servi div.card {
-    border: 2px solid blue;
     margin: 2% 0;
+
 }
 
  body div.servicies div.servi div.card button {
     border: none;
+
+}
+
+ body div.servicies div.servi div.card img {
+    width: 100%;
+    height: 50%;
+
+}
+
+ body div.servicies div.servi .card1 {
+    border: 5px solid #ffa500;
+
+}
+
+ body div.servicies div.servi .card1 button {
+    background: #ffa500;
+
+}
+
+ body div.servicies div.servi .card2 {
+    border: 5px solid #1ec24a;
+
+}
+
+ body div.servicies div.servi .card2 button {
+    background: #1ec24a;
+
+}
+
+ body div.servicies div.servi .card3 {
+    border: 5px solid #1ec28e;
+
+}
+
+ body div.servicies div.servi .card3 button {
+    background: #1ec28e;
+
+}
+
+ body div.servicies div.servi .card4 {
+    border: 5px solid #a91343;
+
+}
+
+ body div.servicies div.servi .card4 button {
+    background: #a91343;
+
+}
+
+ body div.servicies div.servi .card5 {
+    border: 5px solid #007bff;
+
+}
+
+ body div.servicies div.servi .card5 button {
+    background: #007bff;
+
+}
+
+ body div.servicies div.servi .card6 {
+    border: 5px solid #0e5051;
+
+}
+
+ body div.servicies div.servi .card6 button {
+    background: #0e5051;
+
+}
+
+ body div.servicies div.servi .card7 {
+    border: 5px solid #258cc8;
+
+}
+
+ body div.servicies div.servi .card7 button {
+    background: #258cc8;
+
+}
+
+ body div.servicies div.servi .card8 {
+    border: 5px solid #7d0784;
+
+}
+
+ body div.servicies div.servi .card8 button {
+    background: #7d0784;
+
+}
+
+ body div.servicies div.servi .card9 {
+    border: 5px solid #ded123;
+
+}
+
+ body div.servicies div.servi .card9 button {
+    background: #ded123;
+
 } 
+         body div.contact{
+          padding:3%;
+          background: #272727;
+          color: white
+        
+
+         } 
+         body div.contact h3.title_contact {
+    text-align: inherit;
+    border-bottom: 2px solid #258cc8;
+
+}
