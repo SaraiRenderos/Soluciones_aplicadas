@@ -6,6 +6,7 @@ module.exports = {
 					grid: true,
 				}
 			}
-			})
+			}),
+		
 	]
 }
